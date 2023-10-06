@@ -1,0 +1,11 @@
+{
+    "name": "minimal-gutenberg-block",
+    "description": "",
+    "version": "0.1.0",
+    "scripts": {
+        "build": "wp-scripts build"
+    },
+    "devDependencies": {
+        "@wordpress/scripts": "^26.14.0"
+    }
+}
