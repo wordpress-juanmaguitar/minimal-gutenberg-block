@@ -1,6 +1,6 @@
 <?php
 /*
-* Plugin Name: Minimal Gutenberg Block
+* Plugin Name: Minimal Gutenberg Block Plugin
 */
 
 function register_block() {
