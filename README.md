@@ -5,9 +5,9 @@ This repository contains a plugin that register a minimal block that has been de
 ## Table of Contents
 
 - [Start Guide](#start-guide)
-  - 1. Install dependencies
-  - 2. Generate the build 
-  - 3. Use it in your WordPress installation 
+  - [1. Install dependencies](#1-install-dependencies)
+  - [2. Generate the build ](#2-generate-the-build)
+  - [3. Use it in your WordPress installation ](#3-use-it-in-your-wordpress-installation)
 - [Anatomy of this block](#anatomy-of-this-block)
   - [The plugin](#the-plugin)   
   - [The block](#the-block) 
