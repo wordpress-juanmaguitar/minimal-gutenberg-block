@@ -2,6 +2,9 @@
 
 This repository contains a plugin that register a minimal block that has been defined using JSX so it needs a `build` process to convert the JSX syntax into JS code that browsers can understand (ES5).
 
+> [See diagram](https://excalidraw.com/#json=EMvbHZvzmuMGZUOuXj8FE,Llk4sac-Q3TP88V07hWYqA) 
+
+
 ## Table of Contents
 
 - [Start Guide](#start-guide)
@@ -55,7 +58,6 @@ The essential files for this block are:
 - `src/index.js`
     - Starting point for block behaviour definitions
 
-> [See diagram](https://excalidraw.com/#json=EMvbHZvzmuMGZUOuXj8FE,Llk4sac-Q3TP88V07hWYqA) 
 
 The `package.json` fle include dependencies needed for "build" time. In this minimal version it just includes the [`@wordpress/scripts`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-scripts/) dependency and the `build` script that will allow us to easily run a build process for our block.
 
@@ -130,8 +132,10 @@ registerBlockType( 'minimal-gutenberg-block/my-block', {
 ```
 
 The [`registerBlockType`](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/#registerblocktype) function registers our block in the Block Editor (so it can be found and inserted). This function takes two arguments
-- Our [block name](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/#block-name) → 'minimal-gutenberg-block/my-block'
+- Our [block name](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/#block-name) → `minimal-gutenberg-block/my-block`
 - A configuration object, with the [edit and save functions](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-edit-save/)
     - `edit` → React component that will be loaded in the Block Editor for our block
     - `save` → What will be stored in the DB for our block
+
+## The build process
 
